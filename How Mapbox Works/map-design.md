@@ -9,13 +9,13 @@ prependJs:
 内容类型: 教程
 ---
 
-Y你能用Mapbox控制地图设计过程中的几乎每个方面，包括上传自定义数据，调整地图配色方案，添加字体，新建数据驱动的可视化等等。地图设计过程的核心是 **样式**: 用一个准确定义如何绘制地图的JSON文件。因为所有的Mapbox样式符合开放资源[Mapbox 样式规范](https://www.mapbox.com/mapbox-gl-js/style-spec/), 你的地图能在多个平台上一致地呈现，包括在网页版Mapbox GL JS，Mapbox静态图像API，在移动设备上适用于Android和iOS的Mapbox地图SDK，以及任何能读取Mapbox样式的第三方库。 这个教程介绍了Mapbox样式的工作原理以及你可以在哪里了解更多信息并开始设计你的地图.
+你能用Mapbox控制地图设计过程中的几乎每个方面，包括上传自定义数据，调整地图配色方案，添加字体，新建数据驱动的可视化等等。地图设计过程的核心是 **样式**: 用一个准确定义如何绘制地图的JSON文件。因为所有的Mapbox样式符合开放资源[Mapbox 样式规范](https://www.mapbox.com/mapbox-gl-js/style-spec/), 你的地图能在多个平台上一致地呈现，包括在网页版Mapbox GL JS，Mapbox静态图像API，在移动设备上适用于Android和iOS的Mapbox地图SDK，以及任何能读取Mapbox样式的第三方库。这个教程介绍了Mapbox样式的工作原理以及你可以在哪里了解更多信息并开始设计你的地图.
 
 {{
   <DemoIframe src="/help/demos/how-mapbox-works/how-styles-work.html" />
 }}
 
-样式文档或JSON样式，包含地图配色者使用的样式规则，用来显示浏览器或设备中的地图。 在这个示例中，你可以看到样式的数据和图像，以及呈现在左侧的**样式 JSON** 和 右侧的**显示实时地图** 中如何显示它们的说明. 在Mapbox GL使用JSON样式及其相应的瓦片集绘制最终地图后，地图将显示在浏览器中.
+样式文档或样式JSON，包含地图配色者使用的样式规则，用来显示浏览器或设备中的地图。 在这个示例中，你可以看到样式的数据和图像，以及呈现在左侧的**样式 JSON** 和右侧的**显示实时地图** 中如何显示它们的说明. 在Mapbox GL使用样式JSON及其相应的瓦片集绘制最终地图后，地图将显示在浏览器中.
 
 ## 地图样式是如何工作的
 
@@ -72,7 +72,7 @@ Y你能用Mapbox控制地图设计过程中的几乎每个方面，包括上传�
 
 #### 数据驱动样式所需的样式表对象
 
-T样式表中任何布局属性，绘制属性或过滤器的值都可以指定为表达式. 使用 [表达式](https://www.mapbox.com/mapbox-gl-js/style-spec#expressions), 可以同时为具有多个要素属性的数据设置样式，应用条件逻辑，并使用算术和字符串操作数据以获得数据与样式之间更复杂的关系. 下面是使用[匹配表达式](https://www.mapbox.com/mapbox-gl-js/style-spec#expressions-match) 显示不同图标图像的布局属性值的示例，具体取决于数据中`marker-number` 属性的值 -
+样式表中任何布局属性，绘制属性或过滤器的值都可以指定为表达式. 使用 [表达式](https://www.mapbox.com/mapbox-gl-js/style-spec#expressions), 可以同时为具有多个要素属性的数据设置样式，应用条件逻辑，并使用算术和字符串操作数据以获得数据与样式之间更复杂的关系. 下面是使用[匹配表达式](https://www.mapbox.com/mapbox-gl-js/style-spec#expressions-match) 显示不同图标图像的布局属性值的示例，具体取决于数据中`marker-number` 属性的值 -
 
 ```
 "layout": {
@@ -90,7 +90,7 @@ T样式表中任何布局属性，绘制属性或过滤器的值都可以指定�
 }
 ```
 
-可以在[Mapbox 样式规范](https://www.mapbox.com/mapbox-gl-js/style-spec) 和[表达式入门](/help/tutorials/mapbox-gl-js-expressions/) 以及 [用Mapbox GL JS制作热力图](/help/tutorials/make-a-heatmap-with-mapbox-gl-js/)示例中进一步探索多种类型的表达式.
+可以在[Mapbox 样式规范](https://www.mapbox.com/mapbox-gl-js/style-spec) 和[表达式入门](/help/tutorials/mapbox-gl-js-expressions/) 以及 [用Mapbox GL JS制作热力图](/help/tutorials/make-a-heatmap-with-mapbox-gl-js/)的示例中进一步探索多种类型的表达式.
 
 ## 创建地图样式
 
@@ -102,7 +102,7 @@ Mapbox Studio 样式编辑器是一个可视化界面，用于根据Mapbox样式
 
 ### Cartogram
 
-用拖拽工作 [Cartogram](https://apps.mapbox.com/cartogram/), 可在几秒钟内创建自定义地图。 上传图片，选择你想要使用的颜色，并创建适合您品牌的地图样式. 新地图样式可以在网站或移动应用程序中使用。 也可以在Mapbox Studio样式编辑器中打开它以继续自定义样式或添加自定义数据.
+用拖放工具 [Cartogram](https://apps.mapbox.com/cartogram/)可在几秒钟内创建自定义地图。 上传图片，选择你想要使用的颜色，并创建适合你品牌的地图样式. 新地图样式可以在网站或移动应用程序中使用，也可以在Mapbox Studio样式编辑器中打开它以继续自定义样式或添加自定义数据.
 
 ### Mapbox 地图 API
 
