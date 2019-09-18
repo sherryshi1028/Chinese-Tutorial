@@ -110,4 +110,4 @@ Mapbox样式API允许您阅读和更改地图样式，字体和图标。 API是M
 
 ### Mapbox 样式规范
 
-Y你可以使用文本编辑器从头开始创建样式并遵循 [Mapbox 样式规范](https://www.mapbox.com/mapbox-gl-js/style-spec).
+你可以使用文本编辑器从头开始创建样式并遵循 [Mapbox 样式规范](https://www.mapbox.com/mapbox-gl-js/style-spec).
